@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8541fd77ae.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+          <div class="nav_links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: #1e90ff;" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="container-home">
+          <div class="column1">
+            <h1>Hi, I'm Jayson</h1>
+            <h2>Web Developer</h2>
+            <p>I work as both a web developer and a designer and have over a year of experience. My areas of competence include website creation and design, UI design, and many others...
+            </p>
+            <div class="button">
+            <a href="form.html" class="btn">Hire Me!</a>
+            <a href="JAYSON ANTONIO FOYO.pdf" download class="btn">Download CV</a>
+            </div>
+          </div>
+          <div class="column1">
+            <img src="Profile.png" alt="Profile">
+            <div class="socmed">
+            <a href="https://www.facebook.com/profile.php?id=100065624357742">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fjeiseunfoyo%3Figshid%3DZGUzMzM3NWJiOQ%253D%253D%26fbclid%3DIwAR2G0aHUKtICa8wmJfjS1lcIgLVlnlB7rtgXgm7SCJBE5kydBkFxuZh0abE&h=AT3m0BL0VO9nd8vtyVRFj3CVN1U9pzrfS5Ub2-i63OXDs3mENxle2zBfC3nPwepw8lyiUtaZ5p-FPiLBtEvZHcK0lU_QUdRavtfXtRahPIU3UthWW4fNo1OJMl_uN2BS7DbioA">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://mail.google.com/">
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+          </a>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+      <img src="checked.png" alt="popup" onload="openPopup()">
+      <h2>🎊Hello!🎉</h2>
+      <p>Thank you for visiting my portfolio.</p>
+      <div class="popup-buttons">
+      <button type="button" onclick="closePopup()">OK</button>
+      <a href="form.html"><button type="button">Hire Me!</button></a>
+    </div>
+    </div>
+    <script>
+      let popup = document.getElementById('popup');
+
+      function openPopup(){
+        popup.classList.add('open-popup');
+      }
+      function closePopup(){
+        popup.classList.remove('open-popup');
+      }
+    </script>
+</body>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0px";
+    navLinks.style.display = "block";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    navLinks.style.display = "none";
+  }
+</script>
+<script type="text/javascript">
+    $("a").click(function(){
+        $("a").css("color","");
+        $(this).css("color","#1e90ff");
+    });
+</script>
+</html>

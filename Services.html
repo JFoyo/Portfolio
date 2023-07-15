@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8541fd77ae.js" crossorigin="anonymous"></script>
+    <title>Services</title>
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <div class="nav_links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: #1e90ff;" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="boxes">
+        <h1>Web Development</h1>
+    </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g7xkVEWrX8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="boxes">
+        <h1>UI Designing</h1>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/COujXxpVk1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="boxes">
+        <h1>Programming</h1>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wAmbDCJocJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="boxes">
+        <h1>Application Development</h1>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CvLlJZlq-M0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0px";
+    navLinks.style.display = "block";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    navLinks.style.display = "none";
+  }
+</script>
+</html>

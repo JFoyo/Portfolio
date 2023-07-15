@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8541fd77ae.js" crossorigin="anonymous"></script>
+    <title>Hire Me</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+          <div class="nav_links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name..." required/>
+        <label for="name">Company</label>
+        <input type="text" id="company" placeholder="Company Name Here...." required/>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="username@eaxample.com" required/>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter message..." required></textarea>
+        <button type="submit" value="Send Message">Send</button>
+    </form>
+    <div class="popup" id="popup">
+      <img src="gmail.png" alt="popup">
+      <h2>Email Send!</h2>
+      <p>Thank you for sending me an email. i will contact you ASAP.</p>
+      <div class="popup-buttons">
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    </div>
+    <div class="popup" id="notsend">
+      <img src="broken.png" alt="notsend">
+      <h2>Email NOT Send!</h2>
+      <p>Please fill up all the fields to send an email.</p>
+      <div class="popup-buttons">
+      <button type="button" onclick="closeNotSend()">OK</button>
+    </div>
+    </div>
+    <script>
+      let popup = document.getElementById('popup');
+
+      function openPopup(){
+        popup.classList.add('open-popup');
+      }
+      function closePopup(){
+        popup.classList.remove('open-popup');
+      }
+    </script>
+    <script>
+      let notsend = document.getElementById('notsend');
+
+      function notSend(){
+        notsend.classList.add('open-popup');
+      }
+      function closeNotSend(){
+        notsend.classList.remove('open-popup');
+      }
+    </script>
+</body>
+<script src="app.js"></script>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0px";
+      navLinks.style.display = "block";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+      navLinks.style.display = "none";
+    }
+  </script>
+</html>

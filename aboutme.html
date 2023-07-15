@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8541fd77ae.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <div class="nav_links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: #1e90ff;" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="container2">
+        <div class="row2">
+          <div class="column">
+            <div class="box">
+            <h1>CAREER OBJECTIVE</h1>
+            <p>Seeking a challenging career with a progressive organization that provides an opportunity to capitalize my technical skills and abilities in the field of Information Technology (IT).</p>
+          </div>
+          <div class="box">
+          <h1>PERSONAL SKILLS</h1>
+          <ul>
+              <li>Excellent written and verbal communication skills</li>
+              <li>Highly organized and efficient</li>
+              <li>Ability to work independently or as a part of a team</li>
+              <li>Proven leadership skills and ability to motivate</li>
+              <li>Can work under extreme pressure</li>
+              <li>Patience in working for longer hours</li>
+              <li>Punctuality in attendance</li>
+              <li>Early submission of school work and assignment</li>
+          </ul>
+        </div>
+          </div>
+          <div class="column">
+              <div class="box">
+            <h1>TECHNICAL SKILLS</h1>
+            <ul>
+                <li>Programming language (Java, C#, C++, Phyton, PHP)</li>
+                <li>MySQL</li>
+                <li>Visual Studio</li>
+                <li>Unity</li>
+                <li>Corel Draw</li>
+                <li>Adobe Master Creative Suite (Photoshop, Flash, Illustrator, Premiere)</li>
+                <li>Microsoft Office (MS Word, Excel, PowerPoint, etc.)</li>
+                <li>Hardware troubleshooting</li>
+            </ul>
+          </div>
+            <div class="box">
+            <h1>WORK EXPERIENCE</h1>
+            <ul>
+                <li>
+                    <h4>Internship / Web Developer & Web Administrator</h4>
+                    <h5>INFORMATION MANAGERS, INC.</h5>
+                    <h5>January 2023 – May 2023</h5>
+                </li>
+                <li>
+                    <h4>Computer / Machine Operator</h4>
+                    <h5>Nextgen Signs & Graphics</h5>
+                    <h5>May 2018 – July 2019</h5>
+                </li>
+                <li>
+                    <h4>Internship / Machine Operator</h4>
+                    <h5>Toyota Aisin Philippines Incorporated</h5>
+                    <h5>March 2017 – March 2018</h5>
+                </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+        <div class="boxes">
+          <h1>EDUCATION</h1>
+        </div>
+        <div class="cards">
+      <div class="boxeses">
+        <img src="Pamantasan_ng_Lungsod_ng_Muntinlupa_logo.png" alt="image">
+        <h4>Pamantasan ng Lungsod ng Muntinlupa</h4>
+        <h5>(2019 – 2023)</h5>
+        <p>University Rd, Poblacion, Muntinlupa, Metro Manila</p>
+      </div>
+      <div class="boxeses">
+        <img src="download.png" alt="image">
+        <h4>San Pedro Relocation Center National High School</h4>
+        <h5>(2013 – 2018)</h5>
+        <p>Imelda St. Old Tenant Brgy. Langgam San Pedro, Laguna</p>
+      </div>
+      <div class="boxeses">
+        <img src="download (1).png" alt="image">
+        <h4>Golden Acres Elementary School</h4>
+        <h5>(2006 – 2012)</h5>
+        <p>Mansanitas St. Talon Singko, Las Piñas City</p>
+      </div>
+        </div>
+</body>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0px";
+    navLinks.style.display = "block";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    navLinks.style.display = "none";
+  }
+</script>
+</html>

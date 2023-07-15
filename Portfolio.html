@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8541fd77ae.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <div class="nav_links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: #1e90ff;" href="Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="boxes">
+      <h1>REACT JS</h1>
+  </div>
+  <div class="cards">
+      <div class="boxeses">
+          <a href="https://jfoyo.github.io/calculator/">
+        <img src="calculator.png" alt="image">
+        <h4>Calculator</h4>
+          </a>
+      </div>
+      <div class="boxeses">
+          <a  href="https://jfoyo.github.io/Grocery-Buddy/">
+        <img src="Grocery Buddy.png" alt="image">
+        <h4>Gracery Buddy</h4>
+          </a>
+      </div>
+      <div class="boxeses">
+          <a  href="https://jfoyo.github.io/beshify/">
+        <img src="beshify.png" alt="image">
+        <h4>Beshify</h4>
+          </a>
+      </div>
+      </div>
+    <div class="boxes">
+        <h1>PYTHON</h1>
+    </div>
+        <div class="cards">
+            <div class="boxeses">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8TacsZ0yKEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <h4>Grading System 2.0</h4>
+            </div>
+            <div class="boxeses">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/nrlFq-SeFvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h4>Grading System</h4>
+              </div>
+              <div class="boxeses">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BBSH3A3MR4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h4>Lotto Games</h4>
+              </div>
+              <div class="boxeses">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LiA3uqqo7ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h4>Payroll System</h4>
+              </div>
+      </div>
+    <div class="boxes">
+        <h1>JAVA</h1>
+    </div>
+    <div class="cards">
+        <div class="boxeses">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cMJhAcx2tFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h4>Calculator</h4>
+        </div>
+        </div>
+    <div class="boxes">
+        <h1>WORDPRESS</h1>
+    </div>
+    <div class="cards">
+        <div class="boxeses">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fwCTudtx5PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h4>CheckPloyee.com</h4>
+        </div>
+        </div>
+    <div class="boxes">
+        <h1>UNITY</h1>
+    </div>
+    <div class="cards">
+        <div class="boxeses">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/a1AFs2tKUTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h4>Inevitable</h4>
+        </div>
+        </div>
+</body>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0px";
+    navLinks.style.display = "block";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    navLinks.style.display = "none";
+  }
+</script>
+</html>
